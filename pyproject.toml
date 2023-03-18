@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "argyaml"
+version = "0.1.5"
+description = "Create a powerful and efficient CLI application using simple and user-friendly yaml config"
+authors = ["Artur Sharapov"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+argyaml = "argyaml.__main__:run"

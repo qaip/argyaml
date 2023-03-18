@@ -1,0 +1,19 @@
+prog: argyaml
+group:
+  required: true
+next:
+  - command: generate 
+    description: Automatically generate template files for handlers based on config file
+    next:
+      - argument: [--name]
+        type: str
+        help: custom name of base handler
+      - argument: [--config]
+        type: str
+        help: path to config file (default cli-config.yaml)
+      - argument: [--dir]
+        type: str
+        help: path to output directory (default /handlers)
+      - argument: [--force]
+        action: store_true
+        help: overwrite existing files
