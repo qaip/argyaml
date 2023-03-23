@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "argyaml"
-version = "0.1.5"
+version = "0.1.6"
 description = "Create a powerful and efficient CLI application using simple and user-friendly yaml config"
 authors = ["Artur Sharapov"]
 license = "MIT"
